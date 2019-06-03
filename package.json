@@ -1,0 +1,46 @@
+{
+    "name": "users-api",
+    "version": "1.0.0",
+    "description": "Api de usuários",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "npm run test-unit && npm run test-integration && npm run test-contracts",
+        "test-integration": "npx mocha --opts test/integration/mocha.opts test/integration/**/*.js",
+        "test-unit": "npx mocha --opts test/unit/mocha.opts test/unit/**/*.js",
+        "test-contracts": "npx mocha --opts test/contracts/mocha.opts test/contracts/**/*.js",
+        "lint": "eslint '/src/**/*.js'",
+        "lint:fix": "eslint './src/**/*.js' --fix"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "body-parser": "^1.17.2",
+        "bunyan": "^1.8.12",
+        "eslint-config-airbnb": "^17.1.0",
+        "express": "^4.15.3",
+        "http-status": "^0.2.5",
+        "morgan": "^1.8.2",
+        "mysql": "^2.15.0",
+        "mysql2": "^1.6.5",
+        "path": "^0.12.7",
+        "request": "^2.81.0",
+        "request-promise": "^4.2.1",
+        "sequelize": "^5.8.7",
+        "sqlite3": "^4.0.8",
+        "stream": "0.0.2",
+        "winston": "^2.3.1"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "eslint": "^3.19.0",
+        "joi": "^9.2.0",
+        "joi-assert": "0.0.3",
+        "mocha": "^6.1.4",
+        "nodemon": "^1.17.3",
+        "nyc": "^11.6.0",
+        "supertest": "^4.0.2",
+        "testdouble": "^1.11.2"
+    }
+}
