@@ -8,8 +8,8 @@ docker-compose up --build
 HTTP verb | URI | Action
 ----------| --- | ------
 GET | /user | list all users
-GET | /user/ID | get user with ID
 POST | /user | create a new user
+GET | /user/ID | get user with ID
 PUT | /user/ID | modify user with ID
 DELETE | /user/ID | delete user with ID
 
